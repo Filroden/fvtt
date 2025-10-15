@@ -15,6 +15,26 @@ Key features include:
 
 It lets players and the GM do many actions without opening the character or creature sheet. Each action button has a rich tooltip showing the same data available in the sheet.
 
+**Version History**
+
+**Version 0.2.0**
+Includes attack buttons, resistance rolls and the rest action.
+
+**Version 0.3.0**
+*   Added skill manouevre rolls. They can be found by clicking the skills panel button on the bottom bar then expanding the skill category to see the skills inside.
+*   Added a custom search bar to find skills...just start typing and it will reveal any skills matching your text and show the number found on the right of the search bar. Click the clear icon in the search bar to reset the filter.
+*   Added endurance rolls (physical and mental)
+*   Updated a few more icons
+
+**Version 0.3.1**
+The REST button now hides during combat (it is still accessible via the character sheet).
+
+**Version 0.3.2**
+Minor code cleanup.
+
+**Version 0.4.0**
+Code and css refactor.
+
 **Roadmap**
 *   Spells (waiting on a system dependency)
 *   Combat specific actions (roll initiative, end turn, etc)

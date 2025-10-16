@@ -19,6 +19,9 @@ It lets players and the GM do many actions without opening the character or crea
 
 **Version History**
 
+**Version 0.4.3**
+*   Minor css change to consolidate styles
+
 **Version 0.4.2**
 *   Added favourite toggle in the skills search bar
 *   Added a favourite "chip" on all skill buttons that are marked as favourite on the actor skills tab

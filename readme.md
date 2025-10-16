@@ -11,13 +11,17 @@ Key features include:
 *   Categorised attack buttons for Melee, Ranged, Natural, and Shield attacks.
 *   Panels for Resistance Rolls, Skill Rolls, and Endurance Checks (Physical/Mental).
 *   A "Rest" button to open the RMU rest dialog.
-*   A search tool for skills. Just start typing and it will show any skills matching your text and the number of skillsfound on the right of the search bar. Click the clear icon in the search bar to reset the filter.
+*   A search tool for skills. Just start typing and it will show any skills matching your text and the number of skillsfound on the right of the search bar. Click the clear icon in the search bar to reset the filter. There is a favourites toggle which will, when active, will only show skills marked as your favourites.
 *   A combat panel to end turn when in combat.
 
 It lets players and the GM do many actions without opening the character or creature sheet. Each action button has a rich tooltip showing the same data available in the sheet.
 
 
 **Version History**
+
+**Version 0.4.2**
+*   Added favourite toggle in the skills search bar
+*   Added a favourite "chip" on all skill buttons that are marked as favourite on the actor skills tab
 
 **Version 0.4.1**
 *   Added combat panel with an end turn button that is only visible when token is in combat and it is their turn.

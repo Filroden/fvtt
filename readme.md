@@ -20,7 +20,7 @@ It lets players and the GM do many actions without opening the character or crea
 **Version History**
 
 **Version 0.4.1**
-*   Add combat panel with an end turn button that is only visible when token is in combat and it is their turn.
+*   Added combat panel with an end turn button that is only visible when token is in combat and it is their turn.
 *   Fixed missing css styles for skill category buttons introduced in v0.4.0
 *   Verified roll initiative button works (in portrait panel).
 *   Changed clear icon in the skills search bar and made it visible only when there is a filter applied.

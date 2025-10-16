@@ -15,7 +15,23 @@ Key features include:
 
 It lets players and the GM do many actions without opening the character or creature sheet. Each action button has a rich tooltip showing the same data available in the sheet.
 
+
 **Version History**
+
+**Version 0.4.1**
+*   Add combat panel with an end turn button that is only visible when token is in combat and it is their turn.
+*   Fixed missing css styles for skill category buttons introduced in v0.4.0
+*   Verified roll initiative button works (in portrait panel).
+*   Changed clear icon in the skills search bar and made it visible only when there is a filter applied.
+
+**Version 0.4.0**
+Code and css refactor.
+
+**Version 0.3.2**
+Minor code cleanup.
+
+**Version 0.3.1**
+The REST button now hides during combat (it is still accessible via the character sheet).
 
 **Version 0.2.0**
 Includes attack buttons, resistance rolls and the rest action.
@@ -26,15 +42,6 @@ Includes attack buttons, resistance rolls and the rest action.
 *   Added endurance rolls (physical and mental)
 *   Updated a few more icons
 
-**Version 0.3.1**
-The REST button now hides during combat (it is still accessible via the character sheet).
-
-**Version 0.3.2**
-Minor code cleanup.
-
-**Version 0.4.0**
-Code and css refactor.
-
 **Roadmap**
 *   Spells (waiting on a system dependency)
-*   Combat specific actions (roll initiative, end turn, etc)
+*   Items (waiting on a system dependency)

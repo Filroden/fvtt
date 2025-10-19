@@ -1,7 +1,8 @@
 # Visage
 Allows the owner of an Actor to instantly switch a Token's image and name between multiple pre-defined visages via a custom, grid-based selector in the Token HUD.
 
-## Version History
+**Version 0.2.1**
+*   Fix issue with reading data from tokens that were not linked to actors
 
 **Version 0.2.0**
 *   Initial build

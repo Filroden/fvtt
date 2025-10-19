@@ -6,5 +6,5 @@
 
 ## Module Documentation
 
-*   [Argon Combat HUD extension for RMU](argon-combat-hud.md)
+*   [Argon Combat HUD extension for RMU](argon-combat-hud-rmu.md)
 *   [Visage](visage.md)

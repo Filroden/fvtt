@@ -1,13 +1,64 @@
 # Visage
 Allows the owner of an Actor to instantly switch a Token's image and name between multiple pre-defined visages via a custom, grid-based selector in the Token HUD.
 
+Software and associated documentation files in this repository are covered by an [MIT License](LICENSE.md).
+
 | Version | Changes |
 | :--- | :--- |
+| **Version 0.2.4** | *  Add module setting to remove visage data from tokens<br>*  Add star icon to default token tile in selector HUD<br>*  Add usage instructions to the README.md |
+| **Version 0.2.3** | *  Under the covers code improvement<br>*  Improvements made to visage token configuration |
 | **Version 0.2.1** | Fix issue with reading data from tokens that were not linked to actors |
 | **Version 0.2.0** | Initial build |
 
 
-## Visage Module: Public API Documentation
+# How to Use Visage
+
+Visage makes it easy to switch a token's appearance and name on the fly. Here’s how to set it up and use it.
+
+## 1. Configuring Visages
+
+Before you can switch visages, you need to define them for an actor.
+
+1.  **Open Token Configuration**: Right-click on a token and choose the cog icon to open the Token Configuration window.
+2.  **Navigate to the Visages Tab**: Inside the configuration window, you will find a new "Visages" tab. Click on it.
+3.  **Set Token Defaults**:
+    *   The "Visages" tab shows the token's default name and image path. These are the settings the token will have when its visage is set to "Default".
+    *   By default, these are inherited from the actor's main settings. However, you can override them by changing the token name on the "Identity" tab or the token image on the "Appearance" tab.
+4.  **Add Alternate Visages**:
+    *   Click the "**Add Visage**" button to create a new alternate form.
+    *   For each alternate visage, you must provide:
+        *   **Name**: A name for the visage (e.g., "Wolf Form", "Disguised", "Wounded", "Barrel"). This name will also be used for the token's name when this visage is active so remember this is what other players will see.
+        *   **Image Path**: The path to the image file for this visage. You can use the folder icon to open the File Picker. Wildcards (`*`) are supported to select a random image from a folder.
+    *   These alternate visages are stored on the actor and are available to all tokens of that actor.
+5.  **Delete Alternative Visages**: Click the trash can next to the alternative visage you want to delete.
+
+![Visage Configuration](images/visage_configuration.png)
+
+## 2. Selecting a Visage
+
+Once configured, switching between visages is simple.
+
+1.  **Open the Token HUD**: Click on a token you have configured to bring up the Token HUD.
+2.  **Click the Visage Icon**: You will see a new icon (typically a "switch account" symbol). Click this to open the Visage Selector.
+3.  **Choose a Visage**: A grid will appear next to the token showing all the available visages you configured, including the token's specific "Default" look. The currently active visage will be highlighted.
+4.  **Click to Switch**: Simply click on any of the images in the grid. The token's image and name will instantly update to match your selection, and the selector will close.
+
+![Visage Selector HUD](images/selector_hud.png)
+
+## 3. Restoring the Default
+
+To switch a token back to its original appearance:
+
+1.  Open the Visage Selector from the Token HUD.
+2.  Click on the Default tile (marked with a gold star in the top left corner).
+3.  The token will revert to the default name and image that you defined in the "Visages" tab of the Token Configuration.
+
+## 4. Deleting all visage-related date
+
+For GMs, the module offers two settings that will remove all visage-related data from either all tokens on a scene or from all tokens on all scenes. Use this with caution as it cannot be undone.
+
+
+# Visage Module: Public API Documentation
 
 The **Visage** module exposes a public API that allows other modules, system macros, or advanced users to programmatically interact with its core functionality, such as switching actor forms.
 
@@ -15,7 +66,7 @@ The API is accessible via `game.modules.get('visage').api`.
 
 -----
 
-### Accessing the API
+## Accessing the API
 
 To access any of the functions described below, you must first get a reference to the API object:
 
@@ -31,9 +82,9 @@ if (!visageAPI) {
 
 -----
 
-### API Methods
+## API Methods
 
-#### 1\. setVisage
+### 1\. setVisage
 
 The core function to switch the specified Token to the specified form.
 
@@ -62,7 +113,7 @@ visageAPI.setVisage("actor-id-12345", "token-id-67890", "Wolf");
 
 \<hr\>
 
-#### 2\. getForms
+### 2\. getForms
 
 Retrieves the universal `alternateImages` data object for the Actor.
 
@@ -89,7 +140,7 @@ const forms = visageAPI.getForms("actor-id-12345");
 
 \<hr\>
 
-#### 3\. isFormActive
+### 3\. isFormActive
 
 Checks if the specified form is currently active on a specific Token.
 
@@ -119,7 +170,7 @@ if (visageAPI.isFormActive("actor-id-12345", "token-id-67890", "default")) {
 
 \<hr\>
 
-#### 4\. resolvePath
+### 4\. resolvePath
 
 A utility function to resolve a file path that may contain a Foundry VTT wildcard (`*`) into a single, concrete image path. This is primarily used for displaying a single image in UI previews.
 

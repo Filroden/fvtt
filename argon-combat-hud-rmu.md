@@ -19,6 +19,7 @@ It lets players and the GM do many actions without opening the character or crea
 
 | Version   | Changes |
 | :--- | :--- |
+| **0.4.4** | *   Added leading + to positive bonus values<br>*   Added tooltips to Endurance buttons |
 | **0.4.3** | *   Minor CSS change to consolidate styles |
 | **0.4.2** | *   Added favourite toggle in the skills search bar<br>*   Added a favourite “chip” on all skill buttons that are marked as favourite on the actor skills tab |
 | **0.4.1** | *   Added combat panel with an end turn button visible only when the token is in combat and it is their turn<br>*   Fixed missing CSS styles for skill category buttons introduced in v0.4.0<br>*   Verified roll initiative button works (in portrait panel)<br>*   Changed clear icon in the skills search bar and made it visible only when there is a filter applied |
@@ -32,3 +33,4 @@ It lets players and the GM do many actions without opening the character or crea
 ## Roadmap
 *   Spells (waiting on a system dependency)
 *   Items (waiting on a system dependency)
+*   Movement improvements to account for phased combat, show smaller units (1'), add additional colour breaks to allow for walk, jog, run, sprint and dash

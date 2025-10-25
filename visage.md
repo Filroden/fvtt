@@ -46,7 +46,7 @@ Before you can switch visages, you need to define them for a token.
 4. **Delete Alternative Visages**: Click the trash can next to delete the alternative visage.
 5. **Save Changes**: If you make any changes (add new visage form, change a value in an existing form, or delete a form), the "Save Changes" button will highlight. Clicking it will save the changes and close the Visage Configuration window.
 
-![Visage Configuration with Disposition](images/visage_configuration.png)
+![Visage Configuration](images/visage_configuration.png)
 
 ### 2. Selecting a Visage
 
@@ -62,7 +62,7 @@ Once configured, switching between visages is simple.
     * If a visage changes the token's disposition, a colored **chip** will appear at the bottom-center indicating the state (e.g., 'Friendly', 'Hostile', 'Secret'), matching Foundry's disposition colors.
 4. **Click to Switch**: Simply click on any of the Visages in the grid. The token's image, name, scale, flip, and disposition will instantly update to match your selection, and the selector will close.
 
-![Visage Selector HUD with Disposition Chip](images/selector_hud.png)
+![Visage Selector HUD](images/selector_hud.png)
 
 ### 3. Restoring the Default
 

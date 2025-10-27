@@ -230,6 +230,8 @@ const tokenId = token.id;
 const actorId = token.actor.id; // Works for both linked and unlinked tokens
 ```
 
+-----
+
 ## Version History
 
 | Version | Changes |

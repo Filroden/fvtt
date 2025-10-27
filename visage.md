@@ -12,23 +12,6 @@ This is the perfect module for visually resolving common game mechanics across a
 
 Software and associated documentation files in this repository are covered by an [MIT License](LICENSE.md).
 
-## Version History
-
-| Version | Changes |
-| :--- | :--- |
-| **Version 1.0.0** | FULL RELEASE:<br>* Refactored internal data storage from name-keyed to UUID-keyed actor flags for improved data integrity<br>* Added one time migration for beta-testers<br>* Additional documentation improvements before public releaseAdditional documentation improvements before public release |
-| **Version 0.5.0** | * Add feature to configure and apply token disposition (Friendly, Neutral, Hostile, Secret) with each visage, enabling disguise and illusion mechanics.<br>* Update styling for configuration window and selector HUD chip.<br>* Update documentation<br>* Small styling changes to Visage Configuration window |
-| **Version 0.4.0** | * Significant re-write<br>* Move the token configuration from the default token window where there was a rendering issue, to its own window, opened by clicking a setting cog in the Visage Selector HUD<br>* Add styling to the "Save Changes" button if there are changes to be saved<br>* Match the new config window style to the Selector HUD style<br>* Sort Visage forms in the Selector HUD in alphabetical order with the default always first<br>* Add shuffle icon on any visage form that uses a wildcard within its filepath to show user they can select it again for a different random pick |
-| **Version 0.3.4** | Fix flip option for token images |
-| **Version 0.3.3** | * Fix bug when restoring scale to default (again)<br>* Fix how wildcard paths are resolved to prevent the mystery man appearing |
-| **Version 0.3.2** | Fix bug when restoring scale to default |
-| **Version 0.3.1** | Fix label in configuration tab |
-| **Version 0.3.0** | Add a token image scaling feature, including option to flip the image |
-| **Version 0.2.4** | * Add module setting to remove visage data from tokens<br>* Add star icon to default token tile in selector HUD<br>* Add usage instructions to the README.md |
-| **Version 0.2.3** | * Under the covers code improvement<br>* Improvements made to visage token configuration |
-| **Version 0.2.1** | Fix issue with reading data from tokens that were not linked to actors |
-| **Version 0.2.0** | INITIAL BETA RELEASE |
-
 ## How to Use Visage
 
 **Visage** makes it easy to switch a token's appearance, name, and mechanical state on the fly. Here’s how to set it up and use it.
@@ -246,3 +229,20 @@ You can reliably get both IDs from any selected Token instance (`token`) on the 
 const tokenId = token.id;
 const actorId = token.actor.id; // Works for both linked and unlinked tokens
 ```
+
+## Version History
+
+| Version | Changes |
+| :--- | :--- |
+| **Version 1.0.0** | FULL RELEASE:<br>* Refactored internal data storage from name-keyed to UUID-keyed actor flags for improved data integrity<br>* Added one time migration for beta-testers<br>* Additional documentation improvements before public releaseAdditional documentation improvements before public release |
+| **Version 0.5.0** | * Add feature to configure and apply token disposition (Friendly, Neutral, Hostile, Secret) with each visage, enabling disguise and illusion mechanics.<br>* Update styling for configuration window and selector HUD chip.<br>* Update documentation<br>* Small styling changes to Visage Configuration window |
+| **Version 0.4.0** | * Significant re-write<br>* Move the token configuration from the default token window where there was a rendering issue, to its own window, opened by clicking a setting cog in the Visage Selector HUD<br>* Add styling to the "Save Changes" button if there are changes to be saved<br>* Match the new config window style to the Selector HUD style<br>* Sort Visage forms in the Selector HUD in alphabetical order with the default always first<br>* Add shuffle icon on any visage form that uses a wildcard within its filepath to show user they can select it again for a different random pick |
+| **Version 0.3.4** | Fix flip option for token images |
+| **Version 0.3.3** | * Fix bug when restoring scale to default (again)<br>* Fix how wildcard paths are resolved to prevent the mystery man appearing |
+| **Version 0.3.2** | Fix bug when restoring scale to default |
+| **Version 0.3.1** | Fix label in configuration tab |
+| **Version 0.3.0** | Add a token image scaling feature, including option to flip the image |
+| **Version 0.2.4** | * Add module setting to remove visage data from tokens<br>* Add star icon to default token tile in selector HUD<br>* Add usage instructions to the README.md |
+| **Version 0.2.3** | * Under the covers code improvement<br>* Improvements made to visage token configuration |
+| **Version 0.2.1** | Fix issue with reading data from tokens that were not linked to actors |
+| **Version 0.2.0** | INITIAL BETA RELEASE |
